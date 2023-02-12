@@ -2,7 +2,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class SumArraysTest {
-    //https://www.codewars.com/kata/53dc54212259ed3d4f00071c/train/java
+    //https://www.codewars.com/kata/53dc54212259ed3d4f00071c/java
     public static double sum(double[] numbers) {
         double num = 0;
         for(double i : numbers) {
