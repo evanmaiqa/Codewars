@@ -1,12 +1,12 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class Sum_Arrays {
+public class SumArraysTest {
     //https://www.codewars.com/kata/53dc54212259ed3d4f00071c/train/java
     public static double sum(double[] numbers) {
         double num = 0;
-        for(int i = 0; i < numbers.length; i++) {
-            num += (double)numbers[i];
+        for(double i : numbers) {
+            num += i;
         }
         return num;
     }
