@@ -10,5 +10,10 @@ public class Main {
         Collections.reverse(list);
         System.out.println(String.join("-", list));
 
+        for(int i = 0; i <= 10; i++) {
+            System.out.println(String.format("%d ---> %d", i, (i & 1)));
+
+        }
+
     }
 }
