@@ -20,8 +20,11 @@ public class Main {
 //        Collections.reverse(list);
 //        System.out.println(String.join("-", list));
 //
+        System.out.println(maskify("4556364607935616"));
 
 
-
+    }
+    public static String maskify(String str) {
+        return  str.substring(0, str.length() - 4).replaceAll("[A-Z\\d]","#") + str.substring( str.length() - 4);
     }
 }
