@@ -22,6 +22,10 @@ public class Main {
 //
         System.out.println(maskify("4556364607935616"));
 
+        int[] arrInt = new int[]{1,2,3};
+        int num = Arrays.stream(arrInt).sum();
+        System.out.println("Arrays.stream(arrInt).sum() is " + num);
+        System.out.println(Math.abs(10));
 
     }
     public static String maskify(String str) {
