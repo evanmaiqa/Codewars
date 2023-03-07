@@ -1,16 +1,22 @@
 import java.util.Arrays;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class Main {
 
     public static void main(String[] args) {
+        Set<String> Set = new HashSet<String>();
 
-        List<?> mixed = Arrays.asList(9, 3, "7", "3");
-        int sum = 0;
-        for (Object obj : mixed) {
-            System.out.println(obj);
-            sum += Integer.parseInt(obj.toString());
+        // Adding Elements
+        Set.add("one");
+        Set.add("two");
+        Set.add("three");
+        Set.add("four");
+        Set.add("five");
+        Set.add("one");
+
+        // Set follows unordered way.
+        System.out.println(Set);
         }
-        System.out.println(sum);
-    }
 }

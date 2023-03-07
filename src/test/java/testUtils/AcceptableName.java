@@ -12,6 +12,6 @@ public class AcceptableName {
     }
 
     public static void main(String[] args) {
-        System.out.println(title("Who likes it"));
+        System.out.println(title("Regex validate PIN code"));
     }
 }
