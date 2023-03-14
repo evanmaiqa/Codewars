@@ -1,22 +1,36 @@
-import java.util.Arrays;
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Main {
 
+
     public static void main(String[] args) {
-        Set<String> Set = new HashSet<String>();
+        String s = "Перевыборы выбранного президента";
+        System.out.println(s.length() - s.replace("е", "").length());
 
-        // Adding Elements
-        Set.add("one");
-        Set.add("two");
-        Set.add("three");
-        Set.add("four");
-        Set.add("five");
-        Set.add("one");
-
-        // Set follows unordered way.
-        System.out.println(Set);
+        String str = "Перестановочный алгоритм быстрого действия", str2 = "";
+        for (int i = 0; i < str.length(); i++) {
+            if (str.charAt(i) == 'о') {
+                str2 += str.charAt(i);
+            }
         }
+        System.out.println(str2);
+
+        String str3 = "Посмотрите как Рите нравится ритм";
+        int index = str3.toLowerCase().indexOf("рит");
+        while (index != -1) {
+            System.out.println(index);
+            index = str3.toLowerCase().indexOf("рит", index + 1);
+        }
+
+        String[][] array = {{"Привет", "всем", "кто" }, {"изучает", "язык", "программирования" }, {"java" }};
+        int sum = 0;
+        for (String[] arr : array) {
+            for (String strArr : arr) {
+                if(!strArr.contains("е")) {
+                    sum ++;
+                }
+            }
+        }
+        System.out.println(sum);
+    }
 }
